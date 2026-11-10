@@ -1,0 +1,45 @@
+.container{
+    display:grid;
+    grid-template-columns:120px auto 120px;
+
+    grid-template-areas:
+    "header header header"
+    "sidebar1 content sidebar2"
+    "footer footer footer";
+
+    gap:10px;
+}
+
+header{
+    grid-area:header;
+    background:gray;
+    color:white;
+    padding:20px;
+}
+
+.sidebar1{
+    grid-area:sidebar1;
+    background:#444;
+    color:white;
+    padding:20px;
+}
+
+main{
+    grid-area:content;
+    background:#666;
+    color:white;
+    padding:20px;
+}
+
+.sidebar2{
+    grid-area:sidebar2;
+    background:#ccc;
+    padding:20px;
+}
+
+footer{
+    grid-area:footer;
+    background:gray;
+    color:white;
+    padding:20px;
+}
